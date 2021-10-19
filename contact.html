@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameArt-contact</title>
+    <script src="https://kit.fontawesome.com/c7fab049d4.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/light_style.css" id="link">
+</head>
+<body>
+    <div class="nav-container">
+        <nav>
+            <!-- Hamburger menu -->
+            <div class="ham-container">
+                <a href="javascript:void(0);" class="hamburger" onclick="dropdownFunction()">
+                    <i class="fas fa-bars" style="font-size:32px"></i>
+                </a>                
+            </div>
+            <ul class = "wide-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>            
+            </ul>
+            <h1>GameArt</h1>
+            <ul class= "icon-list">
+                <li><a href=""><i class="fab fa-facebook icon"></i></a></li>
+                <li><a href=""><i class="fab fa-twitter icon"></i></a></li>
+                <li><a href=""><i class="fab fa-youtube icon"></i></a></li>           
+            </ul>
+        </nav>
+        <div id="dropdown-menu">
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="contact-main">
+        <div class="contact-wrappper">
+            <div class="video">
+                <h2>More about GameArt</h2>
+               
+                <div class="video-player">
+                    <video class= "video-control" src="video/mov_bbb.mp4" type="video/mp4" controls></video>
+                </div>
+            </div>
+            <div class="contact">
+                <h2>Contact </h2>
+                <form class="contact-form" action="#" >
+                    
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" required>
+                    
+                    <label for="name">Interests</label>
+                    <input type="text" name="interests">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                    
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    <input type="submit" value="SUBMIT" class="submit-btn">
+                </form>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Footer -->
+    <footer>
+        <p>GameArt</p>
+        <p class= "dark-mode-switch" id="dark" onclick="changeTheme(this.id); return false;" >Dark Mode<span><i class="fas fa-toggle-on " id="switch-icon"></i></span></p>               
+    </footer>
+    
+    <!-- SCRIPTS -->
+    <script src="javascript/app.js"></script>
+    <script src="javascript/validate.js"></script>
+    
+</body>
+</html>

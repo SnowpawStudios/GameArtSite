@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameArt-Gallery</title>
+    <script src="https://kit.fontawesome.com/c7fab049d4.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/light_style.css" id="link">
+</head>
+<body>
+    <div class="nav-container">
+        <nav>
+            <!-- Hamburger menu -->
+            <div class="ham-container">
+                <a href="javascript:void(0);" class="hamburger" onclick="dropdownFunction()">
+                    <i class="fas fa-bars" style="font-size:32px"></i>
+                </a>                
+            </div>
+            <ul class = "wide-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>            
+            </ul>
+            <h1>GameArt</h1>
+            <ul class= "icon-list">
+                <li><a href=""><i class="fab fa-facebook icon"></i></a></li>
+                <li><a href=""><i class="fab fa-twitter icon"></i></a></li>
+                <li><a href=""><i class="fab fa-youtube icon"></i></a></li>           
+            </ul>
+        </nav>
+        <div id="dropdown-menu">
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="gallery-content">
+
+        <div class= "categories">
+            <ul class="gallery-categories">
+                <li class="cat-btn active">Monsters</li>
+                <li class="cat-btn">Heroes</li>
+                <li class="cat-btn">Castles</li>
+            </ul>
+        </div>
+
+        <div class="gallery"></div>
+        
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- The Close Button -->
+            <span class="close" onclick="closeModal()">&times;</span>       
+            <!-- Modal Content (The Image) -->
+            <div class="modal-content">
+                <img class="modal-img" src="images/monsters/monsters_1.png" alt="themodal">
+            </div>                        
+        </div>        
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>GameArt</p>
+        <p class= "dark-mode-switch" id="dark" onclick="changeTheme(this.id); return false;" >Dark Mode<span><i class="fas fa-toggle-on " id="switch-icon"></i></span></p>               
+    </footer>
+    
+    <!-- SCRIPTS -->
+    <script src="javascript/app.js"></script>
+    <script src="javascript/gallery.js"></script>
+</body>
+</html>
