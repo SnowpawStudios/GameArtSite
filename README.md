@@ -9,7 +9,7 @@ Site features:
   
   *Slideshow coded in javascript and css
   
-  *Dropdown maburger menu coded in JS and CSS
+  *Dropdown hamburger menu coded in JS and CSS
   
   *Customizable dark/light theme using javascript to store preferences in local storage and switch between either a dark or light css-stylesheet.
   
