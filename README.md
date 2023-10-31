@@ -1,5 +1,6 @@
 # GameArtSite
 https://snowpawstudios.github.io/GameArtSite/index.html
+
 Simple art showcase project. Art in Gallery by Rexard (I have purchased this art, please do not use). Main slider theme downloaded from a free art site. Sample videoclip from W3Schools (https://www.w3schools.com/html/html5_video.asp).
 
 Site features:
